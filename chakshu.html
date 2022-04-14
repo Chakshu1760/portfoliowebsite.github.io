@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>chakshu.html</title>
+        <link rel="stylesheet" href="css/style.css" >
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+        <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    </head>
+    <body>
+        <script src="js/form.js">
+        </script>
+        <div class="header">
+                <div class="image">
+                      <img src="img/chaks.jpeg">
+                 </div>
+                <div class="text"> 
+                       <h1> Chakshu Alawadhi </h1>
+                       <a href="pdf/resume.docx" class="button1" download="resume">Resume</a>
+                       <a href="#about" class="button1">About</a>
+                       <a href="#acdmc" class="button1">Academic Honesty Policy</a>
+                       <a href="#education" class="button1">Education</a>
+                       <a href="#interests" class="button1">Interests</a>
+                       <a href="#frm" class="button1">Contact Me</a>
+                </div><br><br>
+                
+                <div class="basic">
+                    <h3>Basic Info</h3>
+                    <ul>
+                        <li> Age        : 20 </li>
+                        <li> Email      : calawadhi@myseneca.ca</li>
+                        <li> Section    : ZCC </li>
+                        <li> Student ID : 150056208 </li>
+                        <li> Instructor : Muath Alzghool</li>
+                        <li> Language   : English,Hindi and Punjabi</li>
+                    </ul>
+                </div>
+               
+
+          <div class="card">
+            <div class="container">
+              <h4><b></b></h4> 
+                <p><h3 id="about">About Me</h3>
+                  <p> Hi, as you have probably read up there, my name is Chakshu Alawadhi, and well this is my website, or a portfolio of me. To explain I am a student of web222 Zcc in Seneca College pursuing Advanced Diploma in Computer Programming and Analysis and I was assigned to make this website as a part of my final assessment for Web222. So here it is, hope you like it.
+                      </p>
+                    
+                    </p>
+                    
+                  </div>
+                </div>        
+              
+        <div class="card">
+          <div class="container">
+            <h4><b></b></h4> 
+            <p><h3 id="acdmc">Academic honesty</h3>
+            
+              <p>I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy. No part of this assessment has been copied manually or electronically from any other source (including web sites) except for the information supplied by the WEB222 instructors and/or made available in this assessment for my use. I also declare that no part of this assignment has been distributed to other students.
+              </p>
+            
+            </p>
+            
+          </div>
+        </div>
+      
+          <div class="card">
+            <div class="container">
+              <h4><b></b></h4> 
+              <p><h3 id="interests">My Interests</h3>
+                <p>One of my favorite things to do is working out, its a good stress reliever and youre keeping yourself healthy so its a win-win and mostly why i do it, and apparently it gives me a confidence boost too for some reason. 
+                </p>
+                <p>Other things i love to do is gaming, I love to play Counter strike GO, even though the game is super old and full of hackers now, but every sunday me and bunch of friends get together and play in teams versus each other and honestly its one of the few things i look forward to every week.</p>
+              </p>
+                    
+            </div>
+          </div>
+          <div class="card">
+              <div class="container">
+                <p><h3 id="education">Education</h3></p>
+                <ul>
+                    <li> Currently pursuing the Computer Programming and Analysis(CPA) Advanced Diploma course from <a href="https://www.senecacollege.ca" target="blank"> Seneca College</a></li>
+                    <li> Completed my highschool education from <a href="https://www.mjkpsdelhi.com" target="blank">Mata Jai Kaur Public School, Delhi</a></li>
+                </ul>
+              </div>
+          </div>
+          <div class="form" id="frm">
+            <h1>Contact Me</h1>
+          <form action="https://httpbin.org/post" method="POST">
+              <div>
+                <label for="fname">First-Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Enter first-name..">
+              </div><br>
+              <div>
+                  <label for="lname">Last-Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Enter last-name..">
+                </div><br>
+              <div>
+                <label for="lname">Your Email </3label>
+                <input type="email" id="email" name="email" placeholder="Enter email..">
+              </div><br>
+              <div>
+                <label for="adds">Your Address </3label>
+                <input type="adds" id="adds" name="adds" placeholder="Enter address..">
+              </div><br>
+              <div>
+                <label for="code">Your Postal Code</3label>
+                <input type="code" id="code" name="code" placeholder="Enter code..">
+              </div><br>
+              <div>
+                <label for="country"> Your City</label>
+                <select id="country" name="country">
+                  <option value="australia">Toronto</option>
+                  <option value="canada">Ottawa</option>
+                  <option value="canada">Barrie</option>
+                  <option value="canada">Richmond Hill</option>
+                  <option value="usa">Brampton</option>
+                  <option value="hamilton">Hamilton</option>
+                </select>
+                <br><br>
+                <label for="phone">Phone number</label>
+                <input type="text" id="phoneno" name="phoneno" placeholder="Enter here">
+              </div>
+              <div><br>
+                <label for="subject">Subject/Reason for contacting</label><br>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:150px"></textarea>
+              </div>
+              <div>
+                  <input type="radio" id="que" name="question" value="que">
+              <label>Comment</label>
+                  <input type="radio" id="comm" name="comment" value="comment">
+              <label>Question</label>
+                  <input type="radio" id="sal" name="hiring" value="hiring" onclick="ShowHideDiv()">
+              <label>Hiring/Job Inquiry</label>
+              </div>
+              <div id="hrly_rate"  style="display: none">
+                  <input type="hrly_rate" id="rt" name="rate" value="rate">
+              <label>Starting salary</label>
+              </div>
+              <input type="submit" value="Submit" id="btn">
+            </form>
+        </div>
+
+    </body>
+</html>
